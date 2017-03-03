@@ -1,2 +1,2 @@
 # MobeDik
-Mini-projet Android pour l'UE MOBE
+[Mini-projet](https://www.irit.fr/~Georges.Da-Costa/cours/glre/mini_projet.pdf) Android pour l'UE MOBE
