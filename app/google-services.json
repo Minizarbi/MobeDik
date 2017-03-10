@@ -36,6 +36,50 @@
           "status": 2
         }
       }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:88029178359:android:be65c03a81cb715b",
+        "android_client_info": {
+          "package_name": "m2dl.com.mobedik"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "88029178359-aunifcjr899ph1vao1bpatllbiunigsi.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "m2dl.com.mobedik",
+            "certificate_hash": "97e84f15e80a931000c3c61b6c1c42d740de9a20"
+          }
+        },
+        {
+          "client_id": "88029178359-8gn25cs1ieiv94h5m9vt37uepiprdrdi.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC3P53IIRp1qU-n6iL18_4_BPc5ILNzlZo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "88029178359-8gn25cs1ieiv94h5m9vt37uepiprdrdi.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
     }
   ],
   "configuration_version": "1"
