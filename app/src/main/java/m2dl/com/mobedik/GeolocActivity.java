@@ -4,6 +4,7 @@ import android.Manifest;
 import android.content.Context;
 import android.content.pm.PackageManager;
 import android.location.Location;
+import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Bundle;
 import android.support.v4.app.ActivityCompat;
@@ -14,6 +15,7 @@ import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
+import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -32,10 +34,15 @@ public class GeolocActivity extends FragmentActivity implements OnMapReadyCallba
 
     private GoogleMap mMap;
 
+    private Marker mMe;
+
+    private LocationListener mLocationListener;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_geoloc);
+
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
         mapFragment.getMapAsync(this);
@@ -63,9 +70,35 @@ public class GeolocActivity extends FragmentActivity implements OnMapReadyCallba
         Location lastLoc = locationManager.getLastKnownLocation(GPS_PROVIDER);
         LatLng latLng = new LatLng(lastLoc.getLatitude(), lastLoc.getLongitude());
         mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(latLng, 10));
+        mMe = mMap.addMarker(new MarkerOptions().position(latLng).draggable(false).title(getString(R.string.me)));
 
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference myRef = database.getReference("buildings");
+
+        mLocationListener = new LocationListener() {
+            @Override
+            public void onLocationChanged(Location location) {
+                mMe.setPosition(new LatLng(location.getLatitude(), location.getLongitude()));
+            }
+
+            @Override
+            public void onStatusChanged(String provider, int status, Bundle extras) {
+
+            }
+
+            @Override
+            public void onProviderEnabled(String provider) {
+
+            }
+
+            @Override
+            public void onProviderDisabled(String provider) {
+
+            }
+        };
+
+        locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 10000, 2, mLocationListener);
+
 
         myRef.addValueEventListener(new ValueEventListener() {
             @Override

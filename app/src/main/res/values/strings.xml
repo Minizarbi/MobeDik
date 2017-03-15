@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">MobeDik</string>
     <string name="title_activity_geoloc">Géolocalisation</string>
+    <string name="me">Moi</string>
 </resources>
