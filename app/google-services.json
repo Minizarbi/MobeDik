@@ -1,27 +1,27 @@
 {
   "project_info": {
-    "project_number": "88029178359",
-    "firebase_url": "https://mobedik-344bd.firebaseio.com",
-    "project_id": "mobedik-344bd",
-    "storage_bucket": "mobedik-344bd.appspot.com"
+    "project_number": "52902789954",
+    "firebase_url": "https://mobedik-6e3ac.firebaseio.com",
+    "project_id": "mobedik-6e3ac",
+    "storage_bucket": "mobedik-6e3ac.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:88029178359:android:eb04f44c4829d224",
+        "mobilesdk_app_id": "1:52902789954:android:be65c03a81cb715b",
         "android_client_info": {
-          "package_name": "com.m2dl"
+          "package_name": "m2dl.com.mobedik"
         }
       },
       "oauth_client": [
         {
-          "client_id": "88029178359-8gn25cs1ieiv94h5m9vt37uepiprdrdi.apps.googleusercontent.com",
+          "client_id": "52902789954-pb732m67u8jnares4bjm8m7hpkmb49oq.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyC3P53IIRp1qU-n6iL18_4_BPc5ILNzlZo"
+          "current_key": "AIzaSyBhwpU0jq7k_1zrdA5altpinbwVUKb7ybY"
         }
       ],
       "services": {
