@@ -100,6 +100,7 @@ public class AnomaliesActivity extends AppCompatActivity implements SensorEventL
                 //uploadPicture(anomalyRef);
                 uploadData();
                 pictureId++;
+                finish();
             }
         });
 
