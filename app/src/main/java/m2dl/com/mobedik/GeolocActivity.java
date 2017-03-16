@@ -38,6 +38,8 @@ public class GeolocActivity extends FragmentActivity implements OnMapReadyCallba
 
     private LocationListener mLocationListener;
 
+    private static final int REQUEST_LOCATION = 2;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -65,7 +67,9 @@ public class GeolocActivity extends FragmentActivity implements OnMapReadyCallba
         LocationManager locationManager = (LocationManager)
                 getSystemService(Context.LOCATION_SERVICE);
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED && ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
-            return;
+            ActivityCompat.requestPermissions(this,
+                    new String[]{Manifest.permission.ACCESS_FINE_LOCATION},
+                    REQUEST_LOCATION);
         }
         Location lastLoc = locationManager.getLastKnownLocation(GPS_PROVIDER);
         LatLng latLng = new LatLng(lastLoc.getLatitude(), lastLoc.getLongitude());

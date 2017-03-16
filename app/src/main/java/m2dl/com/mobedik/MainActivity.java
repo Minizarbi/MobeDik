@@ -36,6 +36,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.timetable:
                 startActivity(new Intent(this, TimetableActivity.class));
                 return true;
+            case R.id.anomalies:
+                startActivity(new Intent(this, AnomaliesActivity.class));
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }

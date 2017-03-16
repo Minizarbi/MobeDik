@@ -26,7 +26,7 @@ import m2dl.com.mobedik.m2dl.com.mobedik.domain.Building;
 
 public class OccupationActivity extends AppCompatActivity {
 
-    private static final String TAG = SignupActivity.class.getSimpleName();
+    private static final String TAG = OccupationActivity.class.getSimpleName();
     GraphView graphRU1, graphRU2;
 
     @Override
