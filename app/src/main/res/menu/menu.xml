@@ -6,7 +6,8 @@
                 android:id="@+id/geoloc" />
             <item android:title="Occupation RU"
                 android:id="@+id/occupation" />
-            <item android:title="Détection d'anomalies" />
+            <item android:title="Détection d'anomalies"
+                android:id="@+id/anomalies"/>
         </menu>
     </item>
     <item android:title="Mes cours">
