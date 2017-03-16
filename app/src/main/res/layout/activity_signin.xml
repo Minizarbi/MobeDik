@@ -2,17 +2,12 @@
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_signup"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="m2dl.com.mobedik.SignupActivity">
-
+    tools:context="m2dl.com.mobedik.SigninActivity"
+    android:id="@+id/activity_signin">
     <EditText
-        android:id="@+id/editPassword"
+        android:id="@+id/editSigninPassword"
         android:layout_width="215dp"
         android:layout_height="43dp"
         android:layout_alignParentTop="true"
@@ -27,7 +22,7 @@
         android:selectAllOnFocus="false"
         android:singleLine="true"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editEmail" />
+        app:layout_constraintTop_toBottomOf="@+id/editSigninEmail" />
 
     <TextView
         android:id="@+id/textEmail"
@@ -38,14 +33,14 @@
         android:layout_toLeftOf="@+id/buttonSignup"
         android:layout_toStartOf="@+id/buttonSignup"
         android:text="Email :"
-        app:layout_constraintRight_toLeftOf="@+id/editEmail"
+        app:layout_constraintRight_toLeftOf="@+id/editSigninEmail"
         android:layout_marginRight="8dp"
         android:layout_marginLeft="8dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/editEmail"
+        app:layout_constraintTop_toTopOf="@+id/editSigninEmail"
         android:layout_marginTop="8dp"
         app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintBottom_toBottomOf="@+id/editEmail"
+        app:layout_constraintBottom_toBottomOf="@+id/editSigninEmail"
         android:layout_marginBottom="8dp" />
 
     <TextView
@@ -55,38 +50,38 @@
         android:layout_alignTop="@+id/textEmail"
         android:layout_column="0"
         android:layout_row="0"
-        android:layout_toLeftOf="@+id/buttonSignup"
-        android:layout_toStartOf="@+id/buttonSignup"
+        android:layout_toLeftOf="@+id/buttonSignin"
+        android:layout_toStartOf="@+id/buttonSignin"
         android:text="Mot de passe :"
-        app:layout_constraintRight_toLeftOf="@+id/editPassword"
+        app:layout_constraintRight_toLeftOf="@+id/editSigninPassword"
         android:layout_marginRight="8dp"
         android:layout_marginLeft="8dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/editPassword"
+        app:layout_constraintTop_toTopOf="@+id/editSigninPassword"
         android:layout_marginTop="8dp"
         app:layout_constraintHorizontal_bias="0.666"
-        app:layout_constraintBottom_toBottomOf="@+id/editPassword"
+        app:layout_constraintBottom_toBottomOf="@+id/editSigninPassword"
         android:layout_marginBottom="8dp"
         app:layout_constraintVertical_bias="0.9" />
 
     <Button
-        android:id="@+id/buttonSignup"
+        android:id="@+id/buttonSignin"
         android:layout_width="109dp"
         android:layout_height="51dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_column="1"
-        android:layout_row="17"
-        android:text="S'inscrire"
-        android:layout_marginRight="8dp"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginBottom="8dp"
         android:layout_marginLeft="8dp"
-        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginRight="8dp"
+        android:layout_row="17"
+        android:text="Se connecter"
         app:layout_constraintBottom_toBottomOf="parent"
-        android:layout_marginBottom="8dp" />
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent" />
 
     <EditText
-        android:id="@+id/editEmail"
+        android:id="@+id/editSigninEmail"
         android:layout_width="215dp"
         android:layout_height="43dp"
         android:layout_alignParentTop="true"
@@ -101,5 +96,4 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         android:layout_marginTop="24dp" />
-
 </android.support.constraint.ConstraintLayout>
