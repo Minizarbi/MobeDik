@@ -14,7 +14,8 @@
         <menu>
             <item android:title="Interrogation EdT"
                 android:id="@+id/timetable"/>
-            <item android:title="Information" />
+            <item android:title="Information"
+                android:id="@+id/codeinfos"/>
         </menu>
     </item>
     <item android:title="Configuration">

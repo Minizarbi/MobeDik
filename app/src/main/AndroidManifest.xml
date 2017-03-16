@@ -20,20 +20,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
-        <activity android:name=".TimetableActivity"></activity>
-
+        <activity android:name=".TimetableActivity" />
         <activity
             android:name=".GeolocActivity"
             android:label="@string/title_activity_geoloc" />
         <activity android:name=".OccupationActivity" />
         <activity android:name=".SignupActivity" />
+        <activity
+            android:name=".CodeinfosActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".AnomaliesActivity"
+            android:screenOrientation="portrait" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
-        <activity android:name=".AnomaliesActivity"></activity>
     </application>
 
 </manifest>

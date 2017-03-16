@@ -39,6 +39,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.anomalies:
                 startActivity(new Intent(this, AnomaliesActivity.class));
                 return true;
+            case R.id.codeinfos:
+                startActivity(new Intent(this, CodeinfosActivity.class));
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }
