@@ -21,7 +21,8 @@
     <item android:title="Configuration">
         <menu>
             <item android:title="Configuration" />
-            <item android:title="Information" />
+            <item android:title="Information"
+                android:id="@+id/information"/>
         </menu>
     </item>
 </menu>
