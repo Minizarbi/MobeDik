@@ -97,7 +97,7 @@ public class AnomaliesActivity extends AppCompatActivity implements SensorEventL
                 StorageReference storageRef = storage.getReference();
                 StorageReference anomalyRef = storageRef.child(getPictureName());
 
-                //uploadPicture(anomalyRef);
+                uploadPicture(anomalyRef);
                 uploadData();
                 pictureId++;
                 finish();

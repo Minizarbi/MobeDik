@@ -64,6 +64,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.codeinfos:
                 startActivity(new Intent(this, CodeinfosActivity.class));
                 return true;
+            case R.id.config:
+                startActivity(new Intent(this, ConfigActivity.class));
+                return true;
             case R.id.information:
                 startActivity(new Intent(this, InformationActivity.class));
                 return true;
