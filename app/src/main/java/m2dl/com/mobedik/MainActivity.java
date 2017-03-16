@@ -25,7 +25,11 @@ public class MainActivity extends AppCompatActivity {
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
+
         switch (item.getItemId()) {
+            case R.id.occupation:
+                startActivity(new Intent(this, OccupationActivity.class));
+                return true;
             case R.id.geoloc:
                 startActivity(new Intent(this, GeolocActivity.class));
                 return true;

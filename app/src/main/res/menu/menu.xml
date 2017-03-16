@@ -2,10 +2,10 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
     <item android:title="Ma fac">
         <menu>
-            <item
-                android:id="@+id/geoloc"
-                android:title="Géolocalition bâtiments" />
-            <item android:title="Occupation RU" />
+            <item android:title="Géolocalition bâtiments"
+                android:id="@+id/geoloc" />
+            <item android:title="Occupation RU"
+                android:id="@+id/occupation" />
             <item android:title="Détection d'anomalies" />
         </menu>
     </item>
