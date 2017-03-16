@@ -33,12 +33,15 @@
         <activity
             android:name=".AnomaliesActivity"
             android:screenOrientation="portrait" />
+        <activity android:name=".SigninActivity" />
+        <activity android:name=".InformationActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".ConfigActivity" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
-        <activity android:name=".SigninActivity"></activity>
     </application>
 
 </manifest>

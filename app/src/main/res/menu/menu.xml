@@ -7,21 +7,23 @@
             <item android:title="Occupation RU"
                 android:id="@+id/occupation" />
             <item android:title="Détection d'anomalies"
-                android:id="@+id/anomalies"/>
+                android:id="@+id/anomalies" />
         </menu>
     </item>
     <item android:title="Mes cours">
         <menu>
             <item android:title="Interrogation EdT"
-                android:id="@+id/timetable"/>
+                android:id="@+id/timetable" />
             <item android:title="Information"
-                android:id="@+id/codeinfos"/>
+                android:id="@+id/codeinfos" />
         </menu>
     </item>
     <item android:title="Configuration">
         <menu>
-            <item android:title="Configuration" />
-            <item android:title="Information" />
+            <item android:title="Configuration"
+                android:id="@+id/config" />
+            <item android:title="Information"
+                android:id="@+id/information" />
         </menu>
     </item>
 </menu>
