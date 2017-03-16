@@ -1,12 +1,18 @@
 package m2dl.com.mobedik;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutCompat;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.Button;
+
+import com.google.zxing.integration.android.IntentIntegrator;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,6 +20,22 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        final MainActivity activity = this;
+
+        Button signup = (Button) findViewById(R.id.button_signup);
+        signup.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                activity.startActivity(new Intent(activity, SignupActivity.class));
+            }
+        });
+
+        Button signin = (Button) findViewById(R.id.button_signin);
+        signin.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                activity.startActivity(new Intent(activity, SigninActivity.class));
+            }
+        });
     }
 
     @Override

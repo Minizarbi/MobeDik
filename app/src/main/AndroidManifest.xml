@@ -3,9 +3,10 @@
     package="m2dl.com.mobedik">
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
-    <uses-feature android:name="android.hardware.camera"
-        android:required="true" />
 
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
 
     <application
         android:allowBackup="true"
@@ -29,13 +30,15 @@
         <activity
             android:name=".CodeinfosActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".AnomaliesActivity"
+        <activity
+            android:name=".AnomaliesActivity"
             android:screenOrientation="portrait" />
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
 
+        <activity android:name=".SigninActivity"></activity>
     </application>
 
 </manifest>
