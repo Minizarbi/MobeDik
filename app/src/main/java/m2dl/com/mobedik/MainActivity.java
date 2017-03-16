@@ -33,6 +33,9 @@ public class MainActivity extends AppCompatActivity {
             case R.id.geoloc:
                 startActivity(new Intent(this, GeolocActivity.class));
                 return true;
+            case R.id.timetable:
+                startActivity(new Intent(this, TimetableActivity.class));
+                return true;
             default:
                 return super.onOptionsItemSelected(item);
         }

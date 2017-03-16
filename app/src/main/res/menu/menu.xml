@@ -11,7 +11,8 @@
     </item>
     <item android:title="Mes cours">
         <menu>
-            <item android:title="Interrogation EdT" />
+            <item android:title="Interrogation EdT"
+                android:id="@+id/timetable"/>
             <item android:title="Information" />
         </menu>
     </item>
